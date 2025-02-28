@@ -1,0 +1,8 @@
+[
+  { "id": "101", "name": "Classroom 101", "coords": [310, 210], "nodeId": "N1" },
+  { "id": "102", "name": "Classroom 102", "coords": [450, 210], "nodeId": "N2" },
+  { "id": "103", "name": "Classroom 103", "coords": [310, 350], "nodeId": "N3" },
+  { "id": "104", "name": "Classroom 104", "coords": [450, 350], "nodeId": "N4" },
+  { "id": "L1", "name": "Library",      "coords": [600, 150], "nodeId": "N5" },
+  { "id": "H1", "name": "Hallway",      "coords": [200, 500] }
+]
