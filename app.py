@@ -4,13 +4,18 @@ from data.map_data import map_data
 from src.pathfinding import dijkstra
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resource={r"/api/*": {"origins": "http://localhost:5173"}})
 
 rooms = map_data["rooms"]
+edges = map_data["edges"]
 
 @app.route("/api/rooms", methods=["GET"])
 def get_rooms():
     return jsonify(rooms)
+
+@app.route("/api/edges", methods=["GET"])
+def get_edges():
+    return jsonify(edges)
 
 @app.route("/api/rooms/<room_id>", methods=["GET"])
 def get_room(room_id):
